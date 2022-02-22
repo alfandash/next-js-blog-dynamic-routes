@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
   reactStrictMode: true,
-  trailingSlash: false,
+  trailingSlash: true,
   webpackDevMiddleware: config => {
     config.watchOptions = {
       poll: 1000,
