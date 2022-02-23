@@ -2,6 +2,7 @@ import { isEmpty } from "lodash";
 import Nav from "./nav";
 
 const Header = ({ header, headerMenus }) => {
+  console.log('headerMenus', headerMenus)
   if (isEmpty(headerMenus)) {
     return null;
   }

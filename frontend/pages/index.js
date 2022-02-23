@@ -27,10 +27,8 @@ export async function getStaticProps(context) {
     props: {
       data: {
         header: data?.header || [],
-        menus: {
-          headerMenus: data?.headerMenus?.edges || {},
-          footerMenus: data?.footerMenus?.edges || {},
-        },
+        headerMenus: data?.headerMenus || {},
+        footerMenus: data?.footerMenus || {},
         footer: data?.footer || [],
       },
     },

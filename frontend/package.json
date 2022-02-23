@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.9",
+    "dompurify": "^2.3.6",
     "graphql": "^16.3.0",
     "lodash": "^4.17.21",
     "next": "^12.1.0",

@@ -40,9 +40,9 @@ const Nav = ({ headerMenus, header }) => {
           menuHidden ? "max-h-full" : "h-0"
         } overflow-hidden w-full block flex-grow  lg:h-full lg:flex lg:items-center lg:w-auto`}
       >
-        {headerMenus?.length ? (
+        {headerMenus?.edges?.length ? (
           <div className="text-sm lg:flex-grow">
-            {headerMenus?.map((menu) => (
+            {headerMenus?.edges?.map((menu) => (
               <Link href={menu?.node?.path} key={menu?.node?.id}>
                 <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                   {menu?.node?.label}
