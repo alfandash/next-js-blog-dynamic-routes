@@ -5,7 +5,6 @@ import { GET_MENUS } from "../src/apollo/queries/get-menu";
 import Layout from "../src/components/layout";
 
 export default function Index({ data }) {
-
   return (
     <>
       <Layout data={data}>
@@ -27,12 +26,14 @@ export async function getStaticProps(context) {
   return {
     props: {
       data: {
+        header: data?.header || [],
         menus: {
           headerMenus: data?.headerMenus?.edges || {},
           footerMenus: data?.footerMenus?.edges || {},
         },
+        footer: data?.footer || [],
       },
     },
-    revalidate: 60
+    revalidate: 60,
   };
 }

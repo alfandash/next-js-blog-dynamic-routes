@@ -27,6 +27,21 @@ export const HeaderFooter = `
       }
     }
   }
+  header: getHeader {
+    favicon
+    siteLogoUrl
+    siteTagLine
+    siteTitle
+  }
+  footer: getFooter {
+    copyrightText
+    sidebarOne
+    sidebarTwo
+    socialLinks {
+      iconName
+      iconUrl
+    }
+  }
 `;
 
 export const GET_MENUS = gql`
